@@ -90,7 +90,7 @@
       # Stuff for hyprland
       swaylock-effects
       swayidle
-      bemenu
+      fuzzel
       dracula-theme
       wl-clipboard
       slurp
@@ -178,7 +178,8 @@
           "swww init"
           "waybar"
           "swaync"
-          #"blueman-applet"
+          "blueman-applet"
+          "nextcloud"
         ];
         exec = [
           "swww img ~/.wallpaper"
@@ -193,7 +194,7 @@
           "$mod,F,fullscreen,"
           "$mod,E,exec,pkill Hypr"
           "$mod,L,exec,$lock"
-          "$mod,D,exec,bemenu"
+          "$mod,D,exec,fuzzel"
           "$mod,1,workspace,1"
           "$mod,2,workspace,2"
           "$mod,3,workspace,3"
