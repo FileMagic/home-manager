@@ -26,10 +26,12 @@
       "application/xhtml+xml"=["firefox.desktop"];
       "application/x-extension-xhtml"=["firefox.desktop"];
       "application/x-extension-xht"=["firefox.desktop"];
+      "inode/directory" = ["krusader.desktop"];
     };
     associations.removed = {
       "application/pdf" = ["chromium-browser.desktop"];
       "image/png" = ["chromium-browser.desktop"];
+      "inode/directory" = ["code.desktop"];
     };
   };
   home = {
@@ -45,8 +47,6 @@
    homeDirectory = "/home/file_magic";
 
    packages = with pkgs; [
-      qbittorrent-qt5
-      
       # General Applications
       bitwarden
       tor-browser-bundle-bin
@@ -60,18 +60,19 @@
       neovim
       kitty
       alacritty
-      gnome.nautilus
+      krusader
+      kdiff3
+      krename
+      thunderbird
       file
-
-      #vscodium
       pandoc
       ripgrep
       audacity
       bat
       htop
-      mucommander
       p7zip
-    
+      qbittorrent-qt5
+
       # Comms platforms
       signal-desktop
       discord
@@ -79,7 +80,6 @@
 
       # Services
       nextcloud-client
-      syncthing
       
       # Things for taking photos
       gphoto2
