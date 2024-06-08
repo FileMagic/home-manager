@@ -178,8 +178,9 @@
           "swww init"
           "waybar"
           "swaync"
-          "blueman-applet"
-          "nextcloud"
+          #"blueman-applet"
+          #"nextcloud"
+          #"discord"
         ];
         exec = [
           "swww img ~/.wallpaper"
