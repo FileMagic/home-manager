@@ -13,7 +13,11 @@
       "application/x-extension-shtml"=["firefox.desktop;"];
       "application/xhtml+xml"=["firefox.desktop;"];
       "application/x-extension-xhtml"=["firefox.desktop;"];
+      "application/x-extension-insv"=["vlc.desktop;"];
+      "application/x-extension-mp4"=["vlc.desktop;"];
+      "application/x-extension-lrv"=["vlc.desktop;"];
       "application/x-extension-xht"=["firefox.desktop;"];
+      "inode/directory" = ["nautilus.desktop"];
     };
     defaultApplications = {
       "x-scheme-handler/http"=["firefox.desktop"];
@@ -26,7 +30,7 @@
       "application/xhtml+xml"=["firefox.desktop"];
       "application/x-extension-xhtml"=["firefox.desktop"];
       "application/x-extension-xht"=["firefox.desktop"];
-      "inode/directory" = ["krusader.desktop"];
+      "inode/directory" = ["nautilus.desktop"];
     };
     associations.removed = {
       "application/pdf" = ["chromium-browser.desktop"];
@@ -54,13 +58,16 @@
       spotify
       
       # Note Taking
-      logseq
+      #logseq
+      #anki
 
       # utils
       neovim
       kitty
       alacritty
-      krusader
+      gnome.nautilus
+      gnome.nautilus-python
+      gnome.sushi
       kdiff3
       krename
       thunderbird
@@ -72,6 +79,10 @@
       htop
       p7zip
       qbittorrent-qt5
+      parallel
+      outils
+      dbeaver-bin
+      android-studio
 
       # Comms platforms
       signal-desktop
